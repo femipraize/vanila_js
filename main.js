@@ -52,4 +52,28 @@ console.log(number);
 
 //new way
 const fruits = ['apples', 'oranges', 'pears'];
-console.log(fruits[0]);
+fruits.push('mangos'); // this is to add to the array
+fruits.unshift('strawberries'); //this is to add to the begging of the array
+fruits.pop(); // this is to take the last one off the array
+
+console.log(Array.isArray(fruits)); //this is to check if this is an array
+console.log(fruits.indexOf('oranges')); // checking the index of the array
+console.log(fruits);
+
+// Object Literals
+
+const person = {
+    firstName: 'Felix',
+    lastName: 'Ogbangwor',
+    age: 32,
+    hobbies: ['Music', 'Movies','Sport'],
+    adress: {
+        street: '9, Jimoh Oladeinde street',
+        city: 'Gbagada',
+        state: 'Lagos'
+    }
+}
+
+console.log(person.firstName,person.lastName)
+
+console.log(person.hobbies[1])
