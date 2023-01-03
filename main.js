@@ -29,3 +29,27 @@ console.log('My name is ' +name+ 'and i am ' +age)
 //template string/ template leterals
 const hello = `My name is ${name} and i am ${age}`;
 console.log(hello);
+
+
+// string and its properties
+const s = 'hello world';
+
+const sliptExample = 'Technology, computer, it, code';
+
+
+console.log(s.length);
+console.log(s.toLocaleUpperCase());
+console.log(s.toLowerCase());
+console.log(s.substring(0, 5).toUpperCase());
+
+console.log(sliptExample.split(','));
+
+// Arrays - varriables that holds multiple values
+
+//old way
+const number = new Array(1,2,3,4,5);
+console.log(number);
+
+//new way
+const fruits = ['apples', 'oranges', 'pears'];
+console.log(fruits[0]);
