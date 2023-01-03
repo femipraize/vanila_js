@@ -67,13 +67,43 @@ const person = {
     lastName: 'Ogbangwor',
     age: 32,
     hobbies: ['Music', 'Movies','Sport'],
-    adress: {
+    address: {
         street: '9, Jimoh Oladeinde street',
         city: 'Gbagada',
         state: 'Lagos'
     }
 }
 
+person.email = 'femzy@gmail.com';
+
 console.log(person.firstName,person.lastName)
 
-console.log(person.hobbies[1])
+console.log(person.hobbies[1], person.address.city)
+
+// Using destructuring
+const {firstName, lastName, address:{ city}} = person;
+
+console.log(firstName,city);
+
+console.log(person)
+
+// Array of objects
+const todos = [
+    {
+        id: 1,
+        text: 'Take out trash',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Meeting with boss',
+        isCompleted: true
+    },
+    {
+        id: 3,
+        text: 'Dentist appt',
+        isCompleted: false
+    }
+]
+
+console.log(todos)
