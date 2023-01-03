@@ -106,4 +106,58 @@ const todos = [
     }
 ]
 
-console.log(todos)
+console.log(todos[1].text)
+
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
+// For
+
+for(let i = 0; i<=10; i++){
+    console.log(`for loop number ${i}`);
+}
+
+// while 
+let i = 0;
+while(i <= 10) {
+    console.log(`for loop number ${i}`);
+    i++;
+}
+
+// Looping throuh the Todos Array using a forloop
+for(let i = 0; i<todos.length; i++){
+    console.log(todos[i].text);
+}
+
+// Looping through the Todos Array using for of
+for (const todo of todos) {
+    console.log(todo.text)
+}
+
+// Using the high order array method
+// forEach: this loops through the array
+todos.forEach(function(todo){
+    console.log(todo.id);
+});
+
+// map: it allow us to create new array from an array
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+
+console.log(todoText);
+
+// filter: it allows us to create an array based on a condition
+const todoCompleted = todos.filter(function(todo){
+    return todo.isCompleted === true;
+});
+
+console.log(todoCompleted);
+
+// Array method chainning
+const methoChaining = todos.filter(function(todo) {
+    return todo.isCompleted === true;
+}).map(function(todo){
+    return todo.text;
+})
+console.log(methoChaining);
