@@ -172,3 +172,10 @@ if(xTest === 10) {
 } else {
     console.log('x is less than 10');
 }
+
+const buzz = 4;
+const bazz = 11;
+
+if(buzz > 5 || bazz > 10) {
+    console.log(' buzz is more than 5 or bazz is more than 10')
+}
