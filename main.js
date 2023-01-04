@@ -161,3 +161,14 @@ const methoChaining = todos.filter(function(todo) {
     return todo.text;
 })
 console.log(methoChaining);
+
+// Conditionals
+const xTest = 20;
+
+if(xTest === 10) {
+    console.log('x == 10');
+} else if(xTest > 10) {
+    console.log('x is greater than 10');
+} else {
+    console.log('x is less than 10');
+}
