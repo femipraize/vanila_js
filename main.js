@@ -201,3 +201,17 @@ switch(color) {
         console.log('Color is not red or blue');
         break;
 }
+
+// Functions
+function addNumber(num1 = 1, num2 = 1) {
+    return num1 + num2
+}
+
+console.log(addNumber(5, 5));
+
+// Arrow function
+const addNumber2 = (num1, num2) => {
+    return num1 + num2
+}
+
+console.log(addNumber2(7, 9));
