@@ -179,3 +179,9 @@ const bazz = 11;
 if(buzz > 5 || bazz > 10) {
     console.log(' buzz is more than 5 or bazz is more than 10')
 }
+
+// ternary operator
+
+const checkX = 10;
+
+const color = checkX >= 10 ? 'Red' : 'blue';
