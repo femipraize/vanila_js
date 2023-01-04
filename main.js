@@ -184,4 +184,20 @@ if(buzz > 5 || bazz > 10) {
 
 const checkX = 10;
 
-const color = checkX >= 10 ? 'Red' : 'blue';
+const color = checkX > 10 ? 'Red' : 'blue';
+
+console.log(color)
+
+// SWitch
+
+switch(color) {
+    case 'Red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('Color is not red or blue');
+        break;
+}
