@@ -220,7 +220,7 @@ console.log(addNumber2(7, 9));
 const addNumber3 = (num1, num2) => num1 + num2
 console.log(addNumber3(20, 40));
 
-// Object Oriented programming 
+// Basic Object Oriented programming in ES5 
 
 //Constructor function
 function Person(firstName, lastName, dob){
