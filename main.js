@@ -215,3 +215,21 @@ const addNumber2 = (num1, num2) => {
 }
 
 console.log(addNumber2(7, 9));
+
+/* Can also work this way for arrow functions */
+const addNumber3 = (num1, num2) => num1 + num2
+console.log(addNumber3(20, 40));
+
+// Object Oriented programming 
+
+//onstructor function
+function Person(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = dob;
+}
+
+// Instantiate objecct
+const person1 = new Person( 'Femi', 'Ogbangwor', '17-02-1990');
+
+console.log(person1);
