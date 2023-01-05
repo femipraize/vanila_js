@@ -220,6 +220,7 @@ console.log(addNumber2(7, 9));
 const addNumber3 = (num1, num2) => num1 + num2
 console.log(addNumber3(20, 40));
 
+/*
 // Basic Object Oriented programming in ES5 
 
 //Constructor function
@@ -237,6 +238,35 @@ Person.prototype.getBirthYear = function() {
 Person.prototype.getFullName = function() {
     return `${this.firstName} ${this.lastName}`;
 }
+
+// Instantiate objecct
+const person1 = new Person( 'Femi', 'Ogbangwor', '2-17-1990');
+const person2 = new Person( 'Abraham', 'Ariyo', '2-17-1991');
+
+console.log(person1.getFullName());
+console.log(person1.getBirthYear());
+console.log(person2.dob);
+
+*/
+
+// OOP in ES6 Sytaxtic sugar
+// Class
+
+class Person{
+    constructor(firstName, lastName, dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    getBirthYear(){
+        return this.dob.getFullYear();
+    }
+    getFullName(){
+        return `${this.firstName} ${this.lastName}`
+    }
+}
+
 
 // Instantiate objecct
 const person1 = new Person( 'Femi', 'Ogbangwor', '2-17-1990');
