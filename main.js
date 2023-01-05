@@ -222,14 +222,16 @@ console.log(addNumber3(20, 40));
 
 // Object Oriented programming 
 
-//onstructor function
+//Constructor function
 function Person(firstName, lastName, dob){
     this.firstName = firstName;
     this.lastName = lastName;
-    this.dob = dob;
+    this.dob = new Date(dob);
 }
 
 // Instantiate objecct
-const person1 = new Person( 'Femi', 'Ogbangwor', '17-02-1990');
+const person1 = new Person( 'Femi', 'Ogbangwor', '2-17-1990');
+const person2 = new Person( 'Abraham', 'Ariyo', '2-17-1991');
 
 console.log(person1);
+console.log(person2.dob);
