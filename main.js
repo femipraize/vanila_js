@@ -229,9 +229,19 @@ function Person(firstName, lastName, dob){
     this.dob = new Date(dob);
 }
 
+//Using prototype
+Person.prototype.getBirthYear = function() {
+    return this.dob.getFullYear();
+}
+
+Person.prototype.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`;
+}
+
 // Instantiate objecct
 const person1 = new Person( 'Femi', 'Ogbangwor', '2-17-1990');
 const person2 = new Person( 'Abraham', 'Ariyo', '2-17-1991');
 
-console.log(person1);
+console.log(person1.getFullName());
+console.log(person1.getBirthYear());
 console.log(person2.dob);
