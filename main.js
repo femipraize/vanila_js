@@ -16,14 +16,14 @@ function onsubmit(e){
 
         setTimeout(()=> msg.remove(), 3000);
     } else {
-       const li = document.createElement('li');
-       li.appendChild(document.createTextNode(`${nameInput} : ${emailInput}`));
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
 
-       userList.appendChild(li);
+      userList.appendChild(li);
 
-       //Clear fields
-       nameInput.value = '';
-       emailInput.value ='';
+      //Clear feilfs
+      nameInput.value = '';
+      emailInput.value = '';
     }
 }
 
