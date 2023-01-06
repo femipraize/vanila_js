@@ -1,3 +1,38 @@
+// Selector
+// Single element selector
+// console.log(document.getElementById('my=form'));
+//console.log(document.querySelector('h1'));
+
+
+// Multiple element seclector
+//console.log(document.querySelector('.item'));
+
+
+// Looping through item
+ //const items = document.querySelectorAll('.item')
+ //items.forEach((items) => console.log(items));
+
+
+ //const ul = document.querySelector('.items')
+
+ //ul.remove();
+ //ul.lastElementChild.remove();
+//ul.firstElementChild.textContent = 'I Did it';
+//ul.children[1].innerHTML = 'Femi';
+//ul.lastElementChild.innerHTML = '<h1>Feels Good</h1>';
+
+//const btn = document.querySelector('.btn');
+//btn.style.background = 'red';
+
+// Working with events or event listner
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', (e) => {
+    // This is to prevent default behavior
+    e.preventDefault();
+    console.log('click');
+});
+/*
 console.log('Hello World');
 console.error('This is an error');
 console.warn('this is a warning');
@@ -216,11 +251,11 @@ const addNumber2 = (num1, num2) => {
 
 console.log(addNumber2(7, 9));
 
-/* Can also work this way for arrow functions */
+// Can also work this way for arrow functions 
 const addNumber3 = (num1, num2) => num1 + num2
 console.log(addNumber3(20, 40));
 
-/*
+
 // Basic Object Oriented programming in ES5 
 
 //Constructor function
@@ -247,7 +282,7 @@ console.log(person1.getFullName());
 console.log(person1.getBirthYear());
 console.log(person2.dob);
 
-*/
+
 
 // OOP in ES6 Sytaxtic sugar
 // Class
@@ -275,3 +310,5 @@ const person2 = new Person( 'Abraham', 'Ariyo', '2-17-1991');
 console.log(person1.getFullName());
 console.log(person1.getBirthYear());
 console.log(person2.dob);
+
+*/
