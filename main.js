@@ -27,15 +27,74 @@ function onsubmit(e){
     }
 }
 
+
 // Targeting element (# for targetting id, . for targetting class)
 
 
+// working with classes (OOP)
+// class book {
+//    constructor (title, author, year) {
+//        this.title = title;
+//        this.author = author;
+//        this.year = year;
+//    }
+
+//    getSummary() {
+//        return `${this.title} was written by ${this.author} in ${this.year}`;
+//    }
+
+//    getAge(){
+//        const years = new Date().getFullYear() - this.year;
+//        return `${this.title} is ${years} years old`;
+//    }
+
+//    revised(newYear){
+//        this.year = newYear;
+//        this.revised = true;
+//    }
+
+//    static topBookStore() {
+//        return 'Barnes & Noble';
+//    }
+    
+//}
+
+// Instatiate Object
+//const book1 = new book('Book One', 'John Doe', '2013');
+
+// console.log(book1);
+// book1.revised('2018');
+// console.log(book1);
+
+//console.log(book.topBookStore());
 
 
+class book {
+    constructor (title, author, year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+    }
+    
+    getSummary() {
+        return `${this.title} was written by ${this.author} in ${this.year}`;
+    }
+    
+}
 
 
+//Magazine Subclass
+class Magazine extends book{
+    constructor(title, author, year, month) {
+        super(title,author,year);
+        this.month = month;
+    }
+}
 
+//Instatiate Magazine
+const mag1 = new Magazine('Mag One', 'Femi OG', '2023', 'Jan');
 
+console.log(mag1)
 
 // Selector
 // Single element selector
