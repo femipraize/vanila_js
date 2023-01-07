@@ -94,7 +94,7 @@ class Magazine extends book{
 //Instatiate Magazine
 const mag1 = new Magazine('Mag One', 'Femi OG', '2023', 'Jan');
 
-console.log(mag1)
+console.log(mag1.getSummary());
 
 // Selector
 // Single element selector
