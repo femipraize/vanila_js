@@ -96,6 +96,26 @@ const mag1 = new Magazine('Mag One', 'Femi OG', '2023', 'Jan');
 
 console.log(mag1.getSummary());
 
+// var person = {
+//    name: "Femi",
+//    age: 32,
+//  adress:{
+//    street:"9 jimoh oladeinde",
+//    city: "Boston"
+//},
+// children:["Brainna", "Nicholas"]
+//}
+ 
+// Converting an object to JSON
+// person = JSON.stringify(person);
+
+// Conversting  JSON to an Object
+// person = JSON.parse(person);
+
+//console.log(person.children[1]);
+
+
+
 // Selector
 // Single element selector
 // console.log(document.getElementById('my=form'));
